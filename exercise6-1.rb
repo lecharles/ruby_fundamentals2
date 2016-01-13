@@ -34,3 +34,8 @@ check_if_missing_item("aguacate")
 puts #a space-line for better reading
 
 puts @list[1]
+
+puts #a space-line for better reading
+
+@list = @list.sort
+grocery_list
