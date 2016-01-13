@@ -13,3 +13,5 @@ end
 
 students[:cohort4] = 43
 display_a_hash(students)
+puts #space-line for better reading
+print students.keys
