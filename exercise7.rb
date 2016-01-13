@@ -10,4 +10,6 @@ def display_a_hash (hash)
   end
 end
 
+
+students[:cohort4] = 43
 display_a_hash(students)
