@@ -4,14 +4,28 @@ students = {
   :cohort3 => 22
 }
 
-def display_a_hash (hash)
-  hash.each do |name, number|
-    puts "#{name}: #{number} students"
+def display_a_hash(hash)
+  hash.each do |key, value|
+    puts "#{key}: #{value} students"
   end
 end
 
+def increase_capacity(hash)
+  hash.each do |key, value|
+    hash[key] = value * 1.05
+  end
+end
+
+def delete_key_value_pair(hash, key)
+  hash.delete(key)
+end
 
 students[:cohort4] = 43
+# display_a_hash(students)
+# print students.keys
+puts #space-line for better reading
+increase_capacity(students)
 display_a_hash(students)
 puts #space-line for better reading
-print students.keys
+delete_key_value_pair(students, :cohort2)
+display_a_hash(students)
