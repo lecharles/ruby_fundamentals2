@@ -22,7 +22,7 @@ end
 
 def total_number_students(hash)
   total = hash.values.reduce(:+) # equivalent to : (1..n).reduce(0) { |memo, n| memo + n }
-  puts "Total value of students is #{total}"
+  p "Total value of students is #{total}"
 end
 
 students[:cohort4] = 43
