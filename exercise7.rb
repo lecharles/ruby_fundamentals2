@@ -20,6 +20,11 @@ def delete_key_value_pair(hash, key)
   hash.delete(key)
 end
 
+def total_number_students(hash)
+  total = hash.values.reduce(:+) # equivalent to " (1..i).reduce() { |acc, i| acc + i } "
+  puts "Total value of students is #{total}"
+end
+
 students[:cohort4] = 43
 # display_a_hash(students)
 # print students.keys
@@ -29,3 +34,5 @@ display_a_hash(students)
 puts #space-line for better reading
 delete_key_value_pair(students, :cohort2)
 display_a_hash(students)
+puts #space-line for better reading
+total_number_students(students)
