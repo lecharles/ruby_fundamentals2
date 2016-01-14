@@ -21,7 +21,7 @@ def delete_key_value_pair(hash, key)
 end
 
 def total_number_students(hash)
-  total = hash.values.reduce(:+) # equivalent to " (1..i).reduce() { |acc, i| acc + i } "
+  total = hash.values.reduce(:+) # equivalent to : (1..n).reduce(0) { |memo, n| memo + n }
   puts "Total value of students is #{total}"
 end
 
